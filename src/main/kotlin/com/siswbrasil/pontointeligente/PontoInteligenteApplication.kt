@@ -31,7 +31,7 @@ class PontoInteligenteApplication(
 
         val funcionario: Funcionario = Funcionario("Funcionario",
                 "funcionario@empresa.com", SenhaUtils().gerarBcrypt("123456"),
-                "44325441557", PerfilEnum.ROLE_USUARIO, empresa.id!!)
+                "44325441557", PerfilEnum.ROLE_USUARIO, empresa.id)
 
         funcionarioRepository.save(funcionario)
 
